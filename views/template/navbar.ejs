@@ -1,0 +1,14 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="/" >這是一個留言版</a>
+    <div>
+      <% if(username) { %>
+        <div class="">
+          <span class="text-light">Hello, <%= username + '!' %></span>
+          <a class="btn btn-outline-light my-2 my-sm-0" href="/logout">登出</a>
+        </div>
+      <% } else { %>
+        <a class="btn btn-outline-light my-2 my-sm-0" href="/login">登入</a>
+        <a class="btn btn-outline-warning my-2 my-sm-0" href="/register">註冊</a>
+      <% } %>
+    </div>
+  </nav>
